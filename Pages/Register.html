@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>6 Sapori - Registrazione</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <meta name="robots" content="all,follow">
+    
+    <link rel="icon" href="../Utils/Immagini/number-6-made-food-26501290-removebg-preview.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- "../" serve a ritornare nelle cartelle precedenti per linkare qualcosa in un'altra cartella -->
+    <link rel="stylesheet" href="../Style CSS/Nuovo.css">
+  </head>
+
+  <body>
+    
+    <header class="header header-absolute">
+      <nav class="navbar fixed-top navbar-expand-lg bg-barretta bordo-barretta">
+          <div class="container-fluid">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <h3 class="text-white text-center font-weight-bold bordoparola text-bold"> <a href="Cucina.html" class="a:hover" style="text-decoration:none; color:unset;">6 Sapori</a></h3>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+
+    <section>
+      <div  style="background-image: url(../Utils/sfondo\ 2.jpg); height:100vh; background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <div style="padding-top: 6rem;">
+          <div class="mx-auto bg-cioccolato ombra card border-dark" style="max-width: 30rem;">
+            <div class="card-header bg-barretta text-center ">
+              <h2 class="text-bold text-white bordoparola text-lucidaSans ">Registrazione</h2>
+            </div>  
+            
+            <form  class="needs-validation">
+
+              <div class="row mx-auto">
+
+                <div class="col-md-6 mb-3 mt-4">
+                  <div class="text-center form-group">
+                    <label for="nomeRegistrazione" class="text-center text-white text-lucidaSans mb-2">Nome</label>
+                    <div class="input-group ">
+                      <div class="input-group-text border-dark bg-barretta text-arancione text-bold">N</div>
+                      <input type="text" class="bg-crema border-dark form-control" id="nomeRegistrazione" placeholder="Inserisci Nome" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3 mt-4">
+                  <div class="text-center form-group">
+                    <label for="cognomeRegistrazione" class="text-center text-white text-lucidaSans mb-2">Cognome</label>
+                    <div class="input-group ">
+                      <div class="input-group-text border-dark bg-barretta text-arancione text-bold">C</div>
+                      <input type="text" class="bg-crema border-dark form-control" id="cognomeRegistrazione" placeholder="Inserisci Cognome" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 mb-4">
+                  <div class="text-center   form-group">
+                    <label for="nicknameRegistrazione" class="text-center text-white text-lucidaSans mb-2">Nickname</label>
+                    <div class="input-group ">
+                      <div class="input-group-text border-dark bg-barretta text-bold"> <i class="far fa-user" style="color: #f0f5f9;" ></i></div>
+                      <input type="text" class="bg-crema border-dark form-control" id="nicknameRegistrazione" placeholder="Inserisci Nickname" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-divider"></div>
+
+              </div>
+
+              <div class="row mx-auto">
+
+                <div class="col-md-12 mb-3 mt-3 ml-auto">
+                  <div class="text-center form-group">
+                    <label for="emailRegistrazione" class="text-center text-white text-lucidaSans mb-2">Email</label>
+                    <div class="input-group ">
+                      <div class="input-group-text border-dark bg-barretta text-arancione text-bold">@</div>
+                      <input type="email" class="bg-crema border-dark form-control" id="emailRegistrazione" placeholder="Inserisci Email" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <div class="text-center  form-group">
+                    <label for="passwordRegistrazione" class="text-center text-white text-lucidaSans mb-2">Password</label>
+                    <div class="input-group ">
+                      <div class="input-group-text border-dark bg-barretta text-bold"><i class="fas fa-key" style="color: #f0f5f9;"></i></div>
+                      <input type="password" class="bg-crema border-dark form-control" id="passwordRegistrazione" placeholder="Inserisci Password" required>
+                      <div class="input-group-text btn bg-barretta text-arancione border-dark "><i id="showPassword" class="fas fa-eye-slash mt-1"></i></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <div class="text-center form-group">
+                    <label for="confermaPasswordRegistrazione" class="text-center text-white text-lucidaSans mb-2">Conferma Password</label>
+                    <div class="input-group ">
+                      <div class="input-group-text border-dark bg-barretta text-bold"><i class="far fa-check-circle" style="color: #f0f5f9;"></i></div>
+                      <input type="password" class="bg-crema border-dark form-control" id="confermaPasswordRegistrazione" placeholder="Conferma Password" required>
+                      <div class="input-group-text btn bg-barretta text-arancione border-dark "><i id="showPasswordConfirm" class="fas fa-eye-slash mt-1"></i></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="text-center bg-barretta">
+                <button onclick="registrazione()" type="button" class="my-4 text-white text-center border-dark btn btn-nocciola "><span class="text-dark">Registrati</span></button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>   
+    </section>
+
+
+    <!-- Footer -->
+    <section class="bg-marroncino overlay-content text-center w-100" style="background-image: linear-gradient(to bottom, #52616b 0%, #11263c 100%); position: relative;"
+>
+    <div  class="row container-fluid py-1">
+      <div class="col-lg-4">
+            <img src="../Utils/Immagini/number-6-made-food-26501290-removebg-preview.png" style="width: 100px;">
+      </div>
+
+      <div class="col-lg-4 pt-2">
+        <div class="text-arancione">
+          Sede  
+        </div>
+        <div class="text-white pt-1">
+          Piazza Città di Lombardia 1
+          20124, Milano - Italia
+        </div>
+      </div>
+
+      <div class="col-lg-4 pt-2">
+          <div class="text-arancione">
+            Seguici
+          </div>
+
+          <div class="pt-3">
+            <a href=""><i class="fab fa-facebook fa-lg footer-icon" style="color: #f0f5f9;"></i></a>
+            <a href=""><i class="fab fa-instagram fa-lg footer-icon" style="color: #f0f5f9;"></i></a>
+          </div>
+      </div>
+
+    </div>
+  </section>
+
+     <script src="https://kit.fontawesome.com/5214a39abf.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+    <script src="../Script JS/registrazione.js"></script>
+
+    <script>
+      (function(){
+        'use strict';
+        window.addEventListener('load', function(){
+          var forms = document.getElementsByClassName('needs-validation');
+          var  validation = Array.prototype.filter.call(forms, function(form){
+            form.addEventListener('submit', function(event){
+              if(form.checkValidity()===false){
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+</body>

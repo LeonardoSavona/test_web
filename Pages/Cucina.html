@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>6 Sapori - Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <meta name="robots" content="all,follow">
+
+    <link rel="icon" href="../Utils/Immagini/number-6-made-food-26501290-removebg-preview.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- "../" serve a ritornare nelle cartelle precedenti per linkare qualcosa in un'altra cartella -->
+    <link rel="stylesheet" href="../Style CSS/Nuovo.css">
+  </head>
+
+  <body onload="stampaTutteRicette()" style="padding-top: 0%;">
+    
+    <header class="header header-absolute">
+        <nav class="navbar fixed-top navbar-expand-lg bg-barretta bordo-barretta">
+            <div class="container-fluid">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" style="background-color: transparent; color: #f0f5f9;; border: none;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="far fa-user" style="color: #f0f5f9;" ></i>
+                </button>
+                <ul id="Accesso" class="bg-nocciola dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="Login.html">Accedi</a></li>
+                  <li><a class="dropdown-item" href="Register.html">Registrati</a></li>
+                </ul>
+              </div>
+
+                <ul class="navbar-nav mx-auto" style="padding-right: 4.3rem;">
+                  <li class="nav-item">
+                    <h3 class="text-white font-weight-bold bordoparola text-bold">6 Sapori</h3>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section >
+      <div style="background-image: url(../Utils/sfondo\ 2.jpg); height:100vh; background-repeat: no-repeat; background-position: center; background-size: cover;">
+          <div class="container pt-5 pb-2" style="position: relative;">
+          
+            <div class="overlay-content">
+              <div class="row pt-5">
+                <div class="col-lg-8 mx-auto">
+
+                  <div class="card border-dark">
+                    <div class="card-header" style="background-color: #11263c;">
+                        <div class="card-header" style="background-image: url(../Utils/Immagini/trasferimento.jpg);">
+                          <h3 class="text-white Flottenheimer text-pomodoro text-center font-weight-bold bordoparola">Riscopri il piacere della cucina in pochi e semplici passi.
+                          </h3>
+                          <h3 class="text-white Flottenheimer bordoparola font-weight-bold text-center">Che tu sia di fretta o abbia tutto il pomeriggio per te,<br> noi troveremo la ricetta che piu' si avvicina ai tuoi requisiti.
+                          </h3>
+                          <h3 class="text-white Flottenheimer bordoparola font-weight-bold text-center">Inserisci gli ingredienti che hai nel frigo e scopri cosa puoi cucinare!
+                          </h3>
+                        </div>
+                      </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+                
+                <div class="pt-3 col-lg-8 ml-auto">
+                  <div class="card border-dark bg-crema">
+                    <div class="card-header bg-barretta" >
+                      <input type="search" onclick="ricerca()" oninput="ricercaPerCaratteri()" id="ricercaIngredienti" placeholder="Inserisci Ingredienti" class="form-control bg-crema">            
+                    </div>
+                    <div id="ingredientiSelezionati" style="display: none;" class="mt-1 ml-1 bg-crema">
+                      <div id="1" style="overflow-x: auto; overflow-y: hidden; white-space: nowrap; height: 100%; width: 100%;">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <select multiple size="5" onclick="aggiungiBottoneIngrediente()" style="display: none;" id="elencoIngredienti" class="form-select form-select-lg bg-crema">
+                  
+                    <option id="acciuga" value="acciuga">acciuga</option>
+                    
+                    <option id="aceto" value="aceto">aceto</option>
+                    
+                    <option id="aceto balsamico" value="aceto balsamico">aceto balsamico</option>
+                    
+                    <option id="aceto di mele" value="aceto di mele">aceto di mele</option>
+                    
+                    <option id="aceto di riso" value="aceto di riso">aceto di riso</option>
+                    
+                    <option id="acqua" value="acqua">acqua</option>
+                    
+                    <option id="aglio" value="aglio">aglio</option>
+                    
+                    <option id="agnello" value="agnello">agnello</option>
+                    
+                    <option id="agretta" value="agretta">agretta</option>
+                    
+                    <option id="albicocca" value="albicocca">albicocca</option>
+                    
+                    <option id="albume" value="albume">albume</option>
+                    
+                    <option id="alice" value="alice">alice</option>
+                    
+                    <option id="alloro" value="alloro">alloro</option>
+                    
+                    <option id="amarena" value="amarena">amarena</option>
+                    
+                    <option id="amaretto" value="amaretto">amaretto</option>
+                    
+                    <option id="amido di mais" value="amido di mais">amido di mais</option>
+                    
+                    <option id="ananas" value="ananas">ananas</option>
+                    
+                    <option id="aneto" value="aneto">aneto</option>
+                    
+                    <option id="anguria" value="anguria">anguria</option>
+                    
+                    <option id="anice stellato" value="anice stellato">anice stellato</option>
+                    
+                    <option id="arachidi" value="arachidi">arachidi</option>
+                    
+                    <option id="arancia" value="arancia">arancia</option>
+                    
+                    <option id="asiago" value="asiago">asiago</option>
+                    
+                    <option id="asparago" value="asparago">asparago</option>
+                    
+                    <option id="astice" value="astice">astice</option>
+                    
+                    <option id="avocado" value="avocado">avocado</option>
+                    
+                    <option id="baccalà" value="baccalà">baccalà</option>
+                    
+                    <option id="baccello di vaniglia" value="baccello di vaniglia">baccello di vaniglia</option>
+                    
+                    <option id="bacche di ginepro" value="bacche di ginepro">bacche di ginepro</option>
+                    
+                    <option id="bacche di goji" value="bacche di goji">bacche di goji</option>
+                    
+                    <option id="bacche di sambuco" value="bacche di sambuco">bacche di sambuco</option>
+                    
+                    <option id="baffe Saint Louis" value="baffe Saint Louis">baffe Saint Louis</option>
+                    
+                    <option id="banana" value="banana">banana</option>
+                    
+                    <option id="barbabietola" value="barbabietola">barbabietola</option>
+                    
+                    <option id="basilico" value="basilico">basilico</option>
+                    
+                    <option id="besciamella" value="besciamella">besciamella</option>
+                    
+                    <option id="bicarbonato di sodio" value="bicarbonato di sodio">bicarbonato di sodio</option>
+                    
+                    <option id="bietola" value="bietola">bietola</option>
+                    
+                    <option id="birra" value="birra">birra</option>
+                    
+                    <option id="biscotto" value="biscotto">biscotto</option>
+                    
+                    <option id="biscotto digestivo" value="biscotto digestivo">biscotto digestivo</option>
+                    
+                    <option id="borragine" value="borragine">borragine</option>
+                    
+                    <option id="braciola" value="braciola">braciola</option>
+                    
+                    <option id="brandy" value="brandy">brandy</option>
+                    
+                    <option id="branzino" value="branzino">branzino</option>
+                    
+                  <option id="brie" value="brie">brie</option>
+                  
+                  <option id="broccolo" value="broccolo">broccolo</option>
+                  
+                  <option id="brodo di carne" value="brodo di carne">brodo di carne</option>
+                  
+                  <option id="brodo vegetale" value="brodo vegetale">brodo vegetale</option>
+                  
+                  <option id="bulgur" value="bulgur">bulgur</option>
+                  
+                  <option id="burro" value="burro">burro</option>
+                  
+                  <option id="burro chiarificato" value="burro chiarificato">burro chiarificato</option>
+                  
+                  <optio id="burro di arachidin value="burro di arachidi">burro di arachidi</option>
+                  
+                  <option id="cacao" value="cacao">cacao</option>
+                  
+                  <option id="caciocavallo" value="caciocavallo">caciocavallo</option>
+                  
+                  <option id="caco" value="caco">caco</option>
+                  
+                  <option id="caffè" value="caffè">caffè</option>
+                  
+                  <option id="camomilla" value="camomilla">camomilla</option>
+                  
+                  <option id="cannella" value="cannella">cannella</option>
+                  
+                  <option id="capesante" value="capesante">capesante</option>
+                  
+                  <option id="capperi" value="capperi">capperi</option>
+                  
+                  <option id="cappone" value="cappone">cappone</option>
+                  
+                  <option id="capretto" value="capretto">capretto</option>
+                  
+                  <option id="caprino" value="caprino">caprino</option>
+                  
+                  <option id="carciofo" value="carciofo">carciofo</option>
+                  
+                  <option id="cardamomo" value="cardamomo">cardamomo</option>
+                  
+                  <option id="cardamono" value="cardamono">cardamono</option>
+                  
+                  <option id="cardo" value="cardo">cardo</option>
+                  
+                  <option id="carne di manzo" value="carne di manzo">carne di manzo</option>
+                  
+                  <option id="carne macinata" value="carne macinata">carne macinata</option>
+                  
+                  <option id="carne tritata" value="carne tritata">carne tritata</option>
+                  
+                  <option id="carota" value="carota">carota</option>
+                  
+                  <option id="castagne" value="castagne">castagne</option>
+                  
+                  <option id="cavolfiore" value="cavolfiore">cavolfiore</option>
+                  
+                  <option id="ceci" value="ceci">ceci</option>
+                  
+                  <option id="cedro" value="cedro">cedro</option>
+                  
+                  <option id="cetriolo" value="cetriolo">cetriolo</option>
+                  
+                  <option id="chicchi di caffè" value="chicchi di caffè">chicchi di caffè</option>
+                  
+                  <option id="chiodi di garofano" value="chiodi di garofano">chiodi di garofano</option>
+                  
+                  <option id="ciliegia" value="ciliegia">ciliegia</option>
+                  
+                  <option id="cime di rapa" value="cime di rapa">cime di rapa</option>
+                  
+                  <option id="cinghiale" value="cinghiale">cinghiale</option>
+                  
+                  <option id="cioccolato" value="cioccolato">cioccolato</option>
+                  
+                  <option id="cioccolato al latte" value="cioccolato al latte">cioccolato al latte</option>
+                  
+                  <option id="cioccolato bianco" value="cioccolato bianco">cioccolato bianco</option>
+                  
+                  <option id="cioccolato fondente" value="cioccolato fondente">cioccolato fondente</option>
+                  
+                  <option id="cioccolato gianduia" value="cioccolato gianduia">cioccolato gianduia</option>
+                  
+                  <option id="cipolla" value="cipolla">cipolla</option>
+                  
+                  <option id="cipolla bianca" value="cipolla bianca">cipolla bianca</option>
+                  
+                  <option id="cipollotto" value="cipollotto">cipollotto</option>
+                  
+                  <option id="clementine" value="clementine">clementine</option>
+                  
+                  <option id="cocco" value="cocco">cocco</option>
+                  
+                  <option id="colomba di pasqua" value="colomba di pasqua">colomba di pasqua</option>
+                  
+                  <option id="colorante alimentare" value="colorante alimentare">colorante alimentare</option>
+                  
+                  <option id="confettura" value="confettura">confettura</option>
+                  
+                  <option id="coniglio" value="coniglio">coniglio</option>
+                  
+                  <option id="coriandolo" value="coriandolo">coriandolo</option>
+                  
+                  <option id="corn flakes" value="corn flakes">corn flakes</option>
+                  
+                  <option id="cosce di pollo" value="cosce di pollo">cosce di pollo</option>
+                  
+                  <option id="cotechino" value="cotechino">cotechino</option>
+                  
+                  <option id="couscous" value="couscous">couscous</option>
+                  
+                  <option id="cuscus" value="cuscus">cuscus</option>
+                  
+                  <option id="cozze" value="cozze">cozze</option>
+                  
+                  <option id="crackers" value="crackers">crackers</option>
+                  
+                  <option id="crauti" value="crauti">crauti</option>
+                  
+                  <option id="cubetti di ghiaccio" value="cubetti di ghiaccio">cubetti di ghiaccio</option>
+                  
+                  <option id="cumino" value="cumino">cumino</option>
+                  
+                  <option id="curcuma" value="curcuma">curcuma</option>
+                  
+                  <option id="curry" value="curry">curry</option>
+                  
+                  <option id="dado" value="dado">dado</option>
+                  
+                  <option id="datteri" value="datteri">datteri</option>
+                  
+                  <option id="dentice" value="dentice">dentice</option>
+                  
+                  <option id="dragoncello" value="dragoncello">dragoncello</option>
+                  
+                  <option id="erba cipollina" value="erba cipollina">erba cipollina</option>
+                  
+                  <option id="erbette" value="erbette">erbette</option>
+                  
+                  <option id="estratto di vaniglia" value="estratto di vaniglia">estratto di vaniglia</option>
+                  
+                  <option id="fagioli" value="fagioli">fagioli</option>
+                  
+                  <option id="fagioli borlotti" value="fagioli borlotti">fagioli borlotti</option>
+                  
+                  <option id="fagioli cannellini" value="fagioli cannellini">fagioli cannellini</option>
+                  
+                  <option id="fagioli rossi" value="fagioli rossi">fagioli rossi</option>
+                  
+                  <option id="fagiolini" value="fagiolini">fagiolini</option>
+                  
+                  <option id="farfalle" value="farfalle">farfalle</option>
+                  
+                  <option id="farina" value="farina">farina</option>
+                  
+                  <option id="farina 00" value="farina 00">farina 00</option>
+                  
+                  <option id="farina di mandorle" value="farina di mandorle">farina di mandorle</option>
+                  
+                  <option id="farina manitoba" value="farina manitoba">farina manitoba</option>
+                  
+                  <option id="farro" value="farro">farro</option>
+                  
+                  <option id="fasolari" value="fasolari">fasolari</option>
+                  
+                  <option id="fave" value="fave">fave</option>
+                  
+                  <option id="fecola di patate" value="fecola di patate">fecola di patate</option>
+                  
+                  <option id="fegatini di pollo" value="fegatini di pollo">fegatini di pollo</option>
+                  
+                  <option id="fegato" value="fegato">fegato</option>
+                  
+                  <option id="feta" value="feta">feta</option>
+                  
+                  <option id="fico" value="fico">fico</option>
+                  
+                  <option id="fico d'india" value="fico d'india">fico d'india</option>
+                  
+                  <option id="filetto di salmone" value="filetto di salmone">filetto di salmone</option>
+                  
+                  <option id="filetto di tonno" value="filetto di tonno">filetto di tonno</option>
+                  
+                  <option id="filetto di maiale" value="filetto di maiale">filetto di maiale</option>
+                  
+                  <option id="filetto di manzo" value="filetto di manzo">filetto di manzo</option>
+                  
+                  <option id="finocchio" value="finocchio">finocchio</option>
+                  
+                  <option id="fiocchi di avena" value="fiocchi di avena">fiocchi di avena</option>
+                  
+                  <option id="fiori di sambuco" value="fiori di sambuco">fiori di sambuco</option>
+                  
+                  <option id="fiori di zucca" value="fiori di zucca">fiori di zucca</option>
+                  
+                  <option id="fiori edibili" value="fiori edibili">fiori edibili</option>
+                  
+                  <option id="foie gras" value="foie gras">foie gras</option>
+                  
+                  <option id="fontina" value="fontina">fontina</option>
+                  
+                  <option id="formaggio di capra" value="formaggio di capra">formaggio di capra</option>
+                  
+                  <option id="formaggio grana" value="formaggio grana">formaggio grana</option>
+                  
+                  <option id="formaggio spalmabile" value="formaggio spalmabile">formaggio spalmabile</option>
+                  
+                  <option id="fragole" value="fragole">fragole</option>
+                  
+                  <option id="fregola sarda" value="fregola sarda">fregola sarda</option>
+                  
+                  <option id="friggitelli" value="friggitelli">friggitelli</option>
+                  
+                  <option id="frutta secca" value="frutta secca">frutta secca</option>
+                  
+                  <option id="frutti di bosco" value="frutti di bosco">frutti di bosco</option>
+                  
+                  <option id="funghi" value="funghi">funghi</option>
+                  
+                  <option id="funghi secchi" value="funghi secchi">funghi secchi</option>
+                  
+                  <option id="fusilli" value="fusilli">fusilli</option>
+                  
+                  <option id="gamberetti" value="gamberetti">gamberetti</option>
+                  
+                  <option id="gamberi" value="gamberi">gamberi</option>
+                  
+                  <option id="gamberone" value="gamberone">gamberone</option>
+                  
+                  <option id="gelatina in fogli" value="gelatina in fogli">gelatina in fogli</option>
+                  
+                  <option id="gelato" value="gelato">gelato</option>
+                  
+                  <option id="gin" value="gin">gin</option>
+                  
+                  <option id="girello" value="girello">girello</option>
+                  
+                  <option id="giuggiola" value="giuggiola">giuggiola</option>
+                  
+                  <option id="gocce di cioccolato" value="gocce di cioccolato">gocce di cioccolato</option>
+                  
+                  <option id="gorgonzola" value="gorgonzola">gorgonzola</option>
+                  
+                  <option id="grappa" value="grappa">grappa</option>
+                  
+                  <option id="guacamole" value="guacamole">guacamole</option>
+                  
+                  <option id="guanciale" value="guanciale">guanciale</option>
+                  
+                  <option id="insalata" value="insalata">insalata</option>
+                  
+                  <option id="ketchup" value="ketchup">ketchup</option>
+                  
+                  <option id="kiwi" value="kiwi">kiwi</option>
+                  
+                  <option id="lamponi" value="lamponi">lamponi</option>
+                  
+                  <option id="lardo" value="lardo">lardo</option>
+                  
+                  <option id="latte" value="latte">latte</option>
+                  
+                  <option id="latte condensato" value="latte condensato">latte condensato</option>
+                  
+                  <option id="latte di cocco" value="latte di cocco">latte di cocco</option>
+                  
+                  <option id="latte di mandorla" value="latte di mandorla">latte di mandorla</option>
+                  
+                  <option id="lattuga" value="lattuga">lattuga</option>
+                  
+                  <option id="lenticchie" value="lenticchie">lenticchie</option>
+                  
+                  <option id="lievito" value="lievito">lievito</option>
+                  
+                  <option id="lievito di birra" value="lievito di birra">lievito di birra</option>
+                  
+                  <option id="lievito madre" value="lievito madre">lievito madre</option>
+                  
+                  <option id="lime" value="lime">lime</option>
+                  
+                  <option id="limoncello" value="limoncello">limoncello</option>
+                  
+                  <option id="limone" value="limone">limone</option>
+                  
+                  <option id="liquirizia" value="liquirizia">liquirizia</option>
+                  
+                  <option id="litchi" value="litchi">litchi</option>
+                  
+                  <option id="lonza di maiale" value="lonza di maiale">lonza di maiale</option>
+                  
+                  <option id="luganega" value="luganega">luganega</option>
+                  
+                  <option id="maggiorana" value="maggiorana">maggiorana</option>
+                  
+                  <option id="maionese" value="maionese">maionese</option>
+                  
+                  <option id="mais" value="mais">mais</option>
+                  
+                  <option id="maizena" value="maizena">maizena</option>
+                  
+                  <option id="mandarino" value="mandarino">mandarino</option>
+                  
+                  <option id="mandorle" value="mandorle">mandorle</option>
+                  
+                  <option id="mango" value="mango">mango</option>
+                  
+                  <option id="margarina" value="margarina">margarina</option>
+                  
+                  <option id="marmellata" value="marmellata">marmellata</option>
+                  
+                  <option id="marron glaces" value="marron glaces">marron glaces</option>
+                  
+                  <option id="mascarpone" value="mascarpone">mascarpone</option>
+                  
+                  <option id="mazzancolla" value="mazzancolla">mazzancolla</option>
+                  
+                  <option id="mela" value="mela">mela</option>
+                  
+                  <option id="melagrana" value="melagrana">melagrana</option>
+                  
+                  <option id="melanzana" value="melanzana">melanzana</option>
+                  
+                  <option id="melone" value="melone">melone</option>
+                  
+                  <option id="menta" value="menta">menta</option>
+                  
+                  <option id="meringa" value="meringa">meringa</option>
+                  
+                  <option id="merluzzo" value="merluzzo">merluzzo</option>
+                  
+                  <option id="miele" value="miele">miele</option>
+                  
+                  <option id="miglio" value="miglio">miglio</option>
+                  
+                  <option id="mirtilli" value="mirtilli">mirtilli</option>
+                  
+                  <option id="mora" value="mora">mora</option>
+                  
+                  <option id="mortadella" value="mortadella">mortadella</option>
+                  
+                  <option id="mozzarella" value="mozzarella">mozzarella</option>
+                  
+                  <option id="nasello" value="nasello">nasello</option>
+                  
+                  <option id="nespola" value="nespola">nespola</option>
+                  
+                  <option id="nocciola" value="nocciola">nocciola</option>
+                  
+                  <option id="noce moscata" value="noce moscata">noce moscata</option>
+                  
+                  <option id="noci" value="noci">noci</option>
+                  
+                  <option id="nutella" value="nutella">nutella</option>
+                  
+                  <option id="olio" value="olio">olio</option>
+                  
+                  <option id="olio di sesamo" value="olio di sesamo">olio di sesamo</option>
+                  
+                  <option id="olive" value="olive">olive</option>
+                  
+                  <option id="olive nere" value="olive nere">olive nere</option>
+                  
+                  <option id="olive taggiasche" value="olive taggiasche">olive taggiasche</option>
+                  
+                  <option id="olive verdi" value="olive verdi">olive verdi</option>
+                  
+                  <option id="ombrina" value="ombrina">ombrina</option>
+                  
+                  <option id="orata" value="orata">orata</option>
+                  
+                  <option id="orecchiette" value="orecchiette">orecchiette</option>
+                  
+                  <option id="oreo" value="oreo">oreo</option>
+                  
+                  <option id="origano" value="origano">origano</option>
+                  
+                  <option id="ortica" value="ortica">ortica</option>
+                  
+                  <option id="orzo" value="orzo">orzo</option>
+                  
+                  <option id="orzo perlato" value="orzo perlato">orzo perlato</option>
+                  
+                  <option id="ostia da pasticceria" value="ostia da pasticceria">ostia da pasticceria</option>
+                  
+                  <option id="ostriche" value="ostriche">ostriche</option>
+                  
+                  <option id="paccheri" value="paccheri">paccheri</option>
+                  
+                  <option id="pan di stelle" value="pan di stelle">pan di stelle</option>
+                  
+                  <option id="pancarrè" value="pancarrè">pancarrè</option>
+                  
+                  <option id="pancetta" value="pancetta">pancetta</option>
+                  
+                  <option id="pancetta affumicata" value="pancetta affumicata">pancetta affumicata</option>
+                  
+                  <option id="pandoro" value="pandoro">pandoro</option>
+                  
+                  <option id="pane" value="pane">pane</option>
+                  
+                  <option id="pane azimo" value="pane azimo">pane azimo</option>
+                  
+                  <option id="pane carasau" value="pane carasau">pane carasau</option>
+                  
+                  <option id="panettone" value="panettone">panettone</option>
+                  
+                  <option id="pangrattato" value="pangrattato">pangrattato</option>
+                  
+                  <option id="panna" value="panna">panna</option>
+                  
+                  <option id="papaya" value="papaya">papaya</option>
+                  
+                  <option id="paprika" value="paprika">paprika</option>
+                  
+                  <option id="parmigiano" value="parmigiano">parmigiano</option>
+                  
+                  <option id="passata di pomodoro" value="passata di pomodoro">passata di pomodoro</option>
+                  
+                  <option id="pasta" value="pasta">pasta</option>
+                  
+                  <option id="pasta brise" value="pasta brise">pasta brise</option>
+                  
+                  <option id="pasta frolla" value="pasta frolla">pasta frolla</option>
+                  
+                  <option id="pasta sfoglia" value="pasta sfoglia">pasta sfoglia</option>
+                  
+                  <option id="patata" value="patata">patata</option>
+                  
+                  <option id="pavesini" value="pavesini">pavesini</option>
+                  
+                  <option id="pecorino" value="pecorino">pecorino</option>
+                  
+                  <option id="penne" value="penne">penne</option>
+                  
+                  <option id="pepe" value="pepe">pepe</option>
+                  
+                  <option id="peperoncino" value="peperoncino">peperoncino</option>
+                  
+                  <option id="peperone" value="peperone">peperone</option>
+                  
+                  <option id="pere" value="pere">pere</option>
+                  
+                  <option id="pesce spada" value="pesce spada">pesce spada</option>
+                  
+                  <option id="pesche" value="pesche">pesche</option>
+                  
+                  <option id="pesto" value="pesto">pesto</option>
+                  
+                  <option id="petto di pollo" value="petto di pollo">petto di pollo</option>
+                  
+                  <option id="philadelphia" value="philadelphia">philadelphia</option>
+                  
+                  <option id="pinoli" value="pinoli">pinoli</option>
+                  
+                  <option id="piselli" value="piselli">piselli</option>
+                  
+                  <option id="pistacchi" value="pistacchi">pistacchi</option>
+                  
+                  <option id="platessa" value="platessa">platessa</option>
+                  
+                  <option id="polenta" value="polenta">polenta</option>
+                  
+                  <option id="polpo" value="polpo">polpo</option>
+                  
+                  <option id="pomodori pelati" value="pomodori pelati">pomodori pelati</option>
+                  
+                  <option id="pomodori secchi" value="pomodori secchi">pomodori secchi</option>
+                  
+                  <option id="pomodorino" value="pomodorino">pomodorino</option>
+                  
+                  <option id="pomodoro" value="pomodoro">pomodoro</option>
+                  
+                  <option id="pompelmo" value="pompelmo">pompelmo</option>
+                  
+                  <option id="porro" value="porro">porro</option>
+                  
+                  <option id="prezzemolo" value="prezzemolo">prezzemolo</option>
+                  
+                  <option id="prosciutto cotto" value="prosciutto cotto">prosciutto cotto</option>
+                  
+                  <option id="prosciutto crudo" value="prosciutto crudo">prosciutto crudo</option>
+                  
+                  <option id="prugna" value="prugna">prugna</option>
+                  
+                  <option id="provola" value="provola">provola</option>
+                  
+                  <option id="provolone" value="provolone">provolone</option>
+                  
+                  <option id="prugne secche" value="prugne secche">prugne secche</option>
+                  
+                  <option id="puntarelle" value="puntarelle">puntarelle</option>
+                  
+                  <option id="quinoa" value="quinoa">quinoa</option>
+                  
+                  <option id="rabarbaro" value="rabarbaro">rabarbaro</option>
+                  
+                  <option id="radicchio" value="radicchio">radicchio</option>
+                  
+                  <option id="ragù" value="ragù">ragù</option>
+                  
+                  <option id="rana pescatrice" value="rana pescatrice">rana pescatrice</option>
+                  
+                  <option id="rapa" value="rapa">rapa</option>
+                  
+                  <option id="ravanelli" value="ravanelli">ravanelli</option>
+                  
+                  <option id="ricotta" value="ricotta">ricotta</option>
+                  
+                  <option id="riso" value="riso">riso</option>
+                  
+                  <option id="riso basmati" value="riso basmati">riso basmati</option>
+                  
+                  <option id="riso soffiato" value="riso soffiato">riso soffiato</option>
+                  
+                  <option id="riso venere" value="riso venere">riso venere</option>
+                  
+                  <option id="roast beef" value="roast beef">roast beef</option>
+                  
+                  <option id="robiola" value="robiola">robiola</option>
+                  
+                  <option id="rosmarino" value="rosmarino">rosmarino</option>
+                  
+                  <option id="rucola" value="rucola">rucola</option>
+                  
+                  <option id="rum" value="rum">rum</option>
+                  
+                  <option id="rum bianco" value="rum bianco">rum bianco</option>
+                  
+                  <option id="salame" value="salame">salame</option>
+                  
+                  <option id="salame piccante" value="salame piccante">salame piccante</option>
+                  
+                  <option id="sale" value="sale">sale</option>
+                  
+                  <option id="sale e pepe" value="sale e pepe">sale e pepe</option>
+                  
+                  <option id="salmone" value="salmone">salmone</option>
+                  
+                  <option id="salmone affumicato" value="salmone affumicato">salmone affumicato</option>
+                  
+                  <option id="salsa bernese" value="salsa bernese">salsa bernese</option>
+                  
+                  <option id="salsa di soia" value="salsa di soia">salsa di soia</option>
+                  
+                  <option id="salsa mornay" value="salsa mornay">salsa mornay</option>
+                  
+                  <option id="salsa worcester" value="salsa worcester">salsa worcester</option>
+                  
+                  <option id="salsiccia" value="salsiccia">salsiccia</option>
+                  
+                  <option id="salvia" value="salvia">salvia</option>
+                  
+                  <option id="sarde" value="sarde">sarde</option>
+                  
+                  <option id="savoiardi" value="savoiardi">savoiardi</option>
+                  
+                  <option id="scalogno" value="scalogno">scalogno</option>
+                  
+                  <option id="scamorza" value="scamorza">scamorza</option>
+                  
+                  <option id="scampo" value="scampo">scampo</option>
+                  
+                  <option id="scarola" value="scarola">scarola</option>
+                  
+                  <option id="scorza di limone" value="scorza di limone">scorza di limone</option>
+                  
+                  <option id="sedano" value="sedano">sedano</option>
+                  
+                  <option id="semi di chia" value="semi di chia">semi di chia</option>
+                  
+                  <option id="semi di finocchio" value="semi di finocchio">semi di finocchio</option>
+                  
+                  <option id="semi di lino" value="semi di lino">semi di lino</option>
+                  
+                  <option id="semi di papavero" value="semi di papavero">semi di papavero</option>
+                  
+                  <option id="semi di sesamo" value="semi di sesamo">semi di sesamo</option>
+                  
+                  <option id="semi di zucca" value="semi di zucca">semi di zucca</option>
+                  
+                  <option id="semolino" value="semolino">semolino</option>
+                  
+                  <option id="senape" value="senape">senape</option>
+                  
+                  <option id="seppia" value="seppia">seppia</option>
+                  
+                  <option id="sfoglie di pasta fresca" value="sfoglie di pasta fresca">sfoglie di pasta fresca</option>
+                  
+                  <option id="sfoglie fresche" value="sfoglie fresche">sfoglie fresche</option>
+                  
+                  <option id="sgombro" value="sgombro">sgombro</option>
+                  
+                  <option id="sogliola" value="sogliola">sogliola</option>
+                  
+                  <option id="sovraccosce di pollo" value="sovraccosce di pollo">sovraccosce di pollo</option>
+                  
+                  <option id="spaghetti" value="spaghetti">spaghetti</option>
+                  
+                  <option id="spaghettoni" value="spaghettoni">spaghettoni</option>
+                  
+                  <option id="speck" value="speck">speck</option>
+                  
+                  <option id="spigola" value="spigola">spigola</option>
+                  
+                  <option id="spinaci" value="spinaci">spinaci</option>
+                  
+                  <option id="stoccafisso" value="stoccafisso">stoccafisso</option>
+                  
+                  <option id="strutto" value="strutto">strutto</option>
+                  
+                  <option id="surimi" value="surimi">surimi</option>
+                  
+                  <option id="susine" value="susine">susine</option>
+                  
+                  <option id="tabasco" value="tabasco">tabasco</option>
+                  
+                  <option id="tacchino" value="tacchino">tacchino</option>
+                  
+                  <option id="taccole" value="taccole">taccole</option>
+                  
+                  <option id="tagliatelle" value="tagliatelle">tagliatelle</option>
+                  
+                  <option id="taralli" value="taralli">taralli</option>
+                  
+                  <option id="tartufo nero" value="tartufo nero">tartufo nero</option>
+                  
+                  <option id="tè" value="tè">tè</option>
+                  
+                  <option id="timo" value="timo">timo</option>
+                  
+                  <option id="tofu" value="tofu">tofu</option>
+                  
+                  <option id="tonno in scatola" value="tonno in scatola">tonno in scatola</option>
+                  
+                  <option id="torrone" value="torrone">torrone</option>
+                  
+                  <option id="totano" value="totano">totano</option>
+                  
+                  <option id="todaro" value="todaro">todaro</option>
+                  
+                  <option id="triglia" value="triglia">triglia</option>
+                  
+                  <option id="trofie" value="trofie">trofie</option>
+                  
+                  <option id="tuorlo" value="tuorlo">tuorlo</option>
+                  
+                  <option id="uovo" value="uovo">uovo</option>
+                  
+                  <option id="uva" value="uva">uva</option>
+                  
+                  <option id="uvetta" value="uvetta">uvetta</option>
+                  
+                  <option id="vanillina" value="vanillina">vanillina</option>
+                  
+                  <option id="verdura" value="verdura">verdura</option>
+                  
+                  <option id="verza" value="verza">verza</option>
+                  
+                  <option id="vino bianco" value="vino bianco">vino bianco</option>
+                  
+                  <option id="vino rosso" value="vino rosso">vino rosso</option>
+                  
+                  <option id="vodka" value="vodka">vodka</option>
+                  
+                  <option id="vongola" value="vongola">vongola</option>
+                  
+                  <option id="whisky" value="whisky">whisky</option>
+                  
+                  <option id="wurstel" value="wurstel">wurstel</option>
+                  
+                  <option id="yogurt" value="yogurt">yogurt</option>
+                  
+                  <option id="zafferano" value="zafferano">zafferano</option>
+                  
+                  <option id="zampone" value="zampone">zampone</option>
+                  
+                  <option id="zenzero" value="zenzero">zenzero</option>
+                  
+                  <option id="zucca" value="zucca">zucca</option>
+                  
+                  <option id="zucchero" value="zucchero">zucchero</option>
+                  
+                  <option id="zucchero a velo" value="zucchero a velo">zucchero a velo</option>
+                  
+                  <option id="zucchina" value="zucchina">zucchina</option>
+                  
+                  <option id="pizzottella" value="pizzottella">pizzottella</option>
+                  
+                  <option id="wafer" value="wafer">wafer</option>
+                  
+                  <option id="cocco rapè" value="cocco rapè">cocco rapè</option>
+                  
+                  <option id="panna fresca" value="panna fresca">panna fresca</option>
+                  
+                  <option id="zucchero semolato" value="zucchero semolato">zucchero semolato</option>
+                  </select>
+                </div>
+
+                <div class="pt-3 col-lg-1">
+                  <div class="card card-body bg-barretta align-items-center border-dark py-2" style="width: fit-content;" >
+                    <button onclick="trovaRicette()" class="btn btn-nocciola text-dark">
+                      Trova!
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="pt-3 col-lg-1">
+                  <div class="dropdown py-1">
+                    <button class="btn bg-nocciola border-dark dropdown-toggle" type="button" style="height: 3rem;" id="difficoltà" data-bs-toggle="dropdown" aria-expanded="false">
+                      Difficoltà
+                    </button>
+                    <ul class="bg-crema dropdown-menu" aria-labelledby="difficoltà">           
+                      <div class="form-check dropdown-item">
+                        <input class="ml-1 form-check-input" type="checkbox" value="" id="facile">
+                        <label class="form-check-label" style="margin-left: 0.2rem;" for="facile">
+                        Facile
+                        </label>
+                      </div>
+                      <div class="form-check dropdown-item">
+                        <input class="ml-1 form-check-input" type="checkbox" value="" id="medio">
+                        <label class="form-check-label" style="margin-left: 0.2rem;" for="medio">
+                          Medio
+                        </label>
+                      </div>
+                      <div class="form-check dropdown-item">
+                        <input class="ml-1 form-check-input" type="checkbox" value="" id="difficile">
+                        <label class="form-check-label" style="margin-left: 0.2rem;" for="difficile">
+                          Difficile
+                        </label>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="pt-3 ml-1 col-lg-1">
+                  <div class="dropdown py-1">
+                    <button class="btn bg-nocciola border-dark dropdown-toggle" style="height: 3rem;" type="button" id="tempo" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tempo
+                    </button>
+                    <ul class="bg-crema dropdown-menu" aria-labelledby="tempo">           
+                      <div class="form-check dropdown-item">
+                        <input class="ml-1 form-check-input" type="checkbox" value="" id="tempo1">
+                        <label class="form-check-label" style="margin-left: 0.2rem;" for="tempo1">
+                        0-20 min
+                        </label>
+                      </div>
+                      <div class="form-check dropdown-item">
+                        <input class="ml-1 form-check-input" type="checkbox" value="" id="tempo2">
+                        <label class="form-check-label" style="margin-left: 0.2rem;" for="tempo2">
+                          21-40 min
+                        </label>
+                      </div>
+                      <div class="form-check dropdown-item">
+                        <input class="ml-1 form-check-input" type="checkbox" value="" id="tempo3">
+                        <label class="form-check-label" style="margin-left: 0.2rem;" for="tempo3">
+                        41-60 min
+                        </label>
+                      </div>
+                      <div class="form-check dropdown-item">
+                        <input class="ml-1 form-check-input" type="checkbox" value="" id="tempo4">
+                        <label class="form-check-label" style="margin-left: 0.2rem;" for="tempo4">
+                        60+ min
+                        </label>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+          <div id="div1" class="rounded mx-auto border-dark0 blur" style="display: none; height: 20rem; max-width: 90%; position:relative;">
+            <div id="div2" style="max-height: 100%; height: 100%; overflow-x: hidden; border: 7px solid #11263c;" >
+              <div id="ricetteTrovate" class="row">
+                
+              </div>
+            </div>
+          </div> 
+
+          <div id="div4" class="rounded mx-auto border-dark0 blur" style="display: block; height: 20rem; max-width: 90%; position:relative;">
+            <div id="div3" style="max-height: 100%; overflow-x: hidden; border: 7px solid #11263c;" >
+              <div id="stamparicette" class="row">
+                
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+  <!-- Footer -->
+<section class="bg-marroncino overlay-content text-center w-100" style="background-image: linear-gradient(to bottom, #52616b 0%, #11263c 100%); position: relative;"
+>
+    <div  class="row container-fluid py-1">
+      <div class="col-lg-4">
+            <img src="../Utils/Immagini/number-6-made-food-26501290-removebg-preview.png" style="width: 100px;">
+      </div>
+
+      <div class="col-lg-4 pt-2">
+        <div class="text-arancione">
+          Sede  
+        </div>
+        <div class="text-white pt-1">
+          Piazza Città di Lombardia 1
+          20124, Milano - Italia
+        </div>
+      </div>
+
+      <div class="col-lg-4 pt-2">
+          <div class="text-arancione">
+            Seguici
+          </div>
+
+          <div class="pt-3">
+            <a href=""><i class="fab fa-facebook fa-lg footer-icon" style="color: #f0f5f9;"></i></a>
+            <a href=""><i class="fab fa-instagram fa-lg footer-icon" style="color: #f0f5f9;"></i></a>
+          </div>
+      </div>
+
+    </div>
+  </section>
+
+     <script src="https://kit.fontawesome.com/5214a39abf.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+    <script src="../Script JS/6 sapori.js"></script>
+</body>
